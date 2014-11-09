@@ -79,5 +79,5 @@ You need to register your strings :
 
 ```javascript
 var en = require( 'json!apps/[YOUR_SUBAPP]/locales/en.json' );
-Hub.request('App.i18n').addLocales( 'en', en );
+i18n.addLocales( 'en', en );
 ```
