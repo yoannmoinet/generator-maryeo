@@ -47,11 +47,11 @@ yo maryeo:subapp [subappname]
 
 ![Web App Folder Tree](generators/subapp_tree.png)
 
-A sub-app will be created under [scripts/apps/[subappname]](generators/app/templates/scripts/apps).
+A sub-app will be created under [scripts/apps/[subappname]](generators/app/templates/app/scripts/apps).
 
 ##### Examples
 
-See the [**SubApp Example**](generators/app/templates/app/scripts/apps/Example/Example.js) and the [**SubAppView Example**](generators/app/templates/app/scripts/apps/Example/views/View.js) to better understand how to integrate your SubApp.
+See the [**SubApp Example**](generators/app/templates/app/scripts/apps/Example/Example.js) and the [**SubAppView Example**](generators/app/templates/app/scripts/apps/Example/views/ExampleView.js) to better understand how to integrate your SubApp.
 
 ### I18N
 
