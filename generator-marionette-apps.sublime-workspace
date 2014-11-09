@@ -1,0 +1,880 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"document",
+				"documentElement"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"is_",
+				"is_string"
+			],
+			[
+				"background",
+				"background-repeat"
+			],
+			[
+				"size",
+				"sizeof"
+			],
+			[
+				"ma",
+				"magnificPopup"
+			],
+			[
+				"menu",
+				"menuIsFixed"
+			],
+			[
+				"need",
+				"needAbsoFoot"
+			],
+			[
+				"menuIs",
+				"menuIsAbsolute"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"wp_get_",
+				"wp_get_nav_menu_items"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"twenty",
+				"twentyeleven-spectrum"
+			],
+			[
+				"theme",
+				"theme_options"
+			],
+			[
+				"custom",
+				"customMenuHookItems"
+			],
+			[
+				"unset",
+				"unset_userdata"
+			],
+			[
+				"val",
+				"val_errors"
+			],
+			[
+				"id",
+				"idUser"
+			],
+			[
+				"webso",
+				"websocket-admin"
+			],
+			[
+				"text-tr",
+				"text-transform"
+			],
+			[
+				"utf8",
+				"utf8_encode"
+			],
+			[
+				"url",
+				"urlencode"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"json_",
+				"json_encode"
+			],
+			[
+				"type",
+				"typeUser"
+			],
+			[
+				"user",
+				"typeUser"
+			],
+			[
+				"array",
+				"array_push"
+			],
+			[
+				"IWeb",
+				"IWebSocketMessage"
+			],
+			[
+				"getSocket",
+				"getSocketByResource"
+			],
+			[
+				"IWE",
+				"IWebSocketMessage"
+			],
+			[
+				"nbScripts",
+				"nbScriptsLoaded"
+			],
+			[
+				"date_tim",
+				"date_timezone_set"
+			],
+			[
+				"para",
+				"parameter_name"
+			],
+			[
+				"selecte",
+				"selectedChild"
+			],
+			[
+				"webkit",
+				"webkitTransitionEnd"
+			],
+			[
+				"ar",
+				"ar_lineups"
+			],
+			[
+				"web",
+				"webkit-box-sizing"
+			],
+			[
+				"click",
+				"clickLeft"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 368.0,
+		"selected_items":
+		[
+			[
+				"Format",
+				"Format: Javascript"
+			],
+			[
+				"Package",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control",
+				"Package Control: Remove Package"
+			],
+			[
+				"Grunt",
+				"Grunt"
+			],
+			[
+				"Package install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package ",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Gist",
+				"Gist: Open Gist"
+			],
+			[
+				"package instal",
+				"Package Control: Install Package"
+			],
+			[
+				"GIst",
+				"Gist: Insert Gist"
+			],
+			[
+				"Browse",
+				"Preferences: Browse Packages"
+			],
+			[
+				"HTML ",
+				"HTMLPrettify: Prettify"
+			],
+			[
+				"TODO",
+				"Show TODOs: Project and open files"
+			],
+			[
+				"SFTP",
+				"SFTP: Browse Server…"
+			],
+			[
+				"sFTP",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"fetc",
+				"Fetch: File"
+			],
+			[
+				"fetch",
+				"Fetch: File"
+			],
+			[
+				"Fetch",
+				"Fetch: Package"
+			],
+			[
+				"Fetc manage",
+				"Fetch: Manage"
+			],
+			[
+				"FEtc",
+				"Fetch: Package"
+			],
+			[
+				"FE",
+				"Fetch: Package"
+			],
+			[
+				"Pac",
+				"Package Control: Install Package"
+			],
+			[
+				"Packa",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"HTMLPrettify: Prettify"
+			],
+			[
+				"Pack	",
+				"Package Control: Install Package"
+			],
+			[
+				"Pack",
+				"Package Control: List Packages"
+			],
+			[
+				"Pakc",
+				"Package Control: Enable Package"
+			],
+			[
+				"pa:ins",
+				"Package Control: Install Package"
+			],
+			[
+				"packag",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Html",
+				"HTMLPrettify: Prettify"
+			]
+		],
+		"width": 435.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/yoann/Developer/Works/generator-marionette-apps"
+	],
+	"file_history":
+	[
+		"/Users/yoann/Developer/Autodesk/collab/src/services/broker/web_app/web/sass/_modules/queue/_queue.scss",
+		"/Users/yoann/Developer/Autodesk/collab/src/services/broker/web_app/web/scripts/apps/Queue/views/JobView.js",
+		"/Users/yoann/Developer/Autodesk/collab/src/services/broker/web_app/web/scripts/apps/Queue/collections/jobsCollection.js",
+		"/Users/yoann/Developer/Autodesk/collab/src/services/broker/web_app/web/scripts/apps/Queue/QueueController.js",
+		"/Users/yoann/Developer/Autodesk/collab/src/services/broker/web_app/web/scripts/apps/Queue/QueueApp.js",
+		"/Users/yoann/Developer/Autodesk/collab/src/services/broker/web_app/web/scripts/apps/Queue/models/filterModel.js",
+		"/Users/yoann/Developer/Autodesk/collab/src/services/broker/web_app/web/scripts/apps/Queue/models/jobModel.js",
+		"/Users/yoann/Developer/Autodesk/collab/src/services/broker/web_app/web/scripts/apps/Queue/collections/filtersCollection.js",
+		"/Users/yoann/Developer/Autodesk/collab/src/services/broker/web_app/web/scripts/apps/Queue/views/QueueView.js",
+		"/Users/yoann/Developer/Autodesk/collab/src/services/broker/web_app/web/scripts/apps/Queue/views/FilterView.js",
+		"/Users/yoann/Developer/Autodesk/collab/src/services/broker/web_app/node_modules/grunt-requirejs/node_modules/q/queue.js",
+		"/Users/yoann/Developer/Autodesk/collab/src/services/broker/web_app/node_modules/grunt-requirejs/node_modules/q/q.js",
+		"/Users/yoann/Library/Application Support/Sublime Text 3/Packages/User/JsFormat.sublime-settings",
+		"/Users/yoann/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/yoann/Developer/Autodesk/collab/src/services/broker/web_app/web/scripts/bower/jquery/test/data/json_obj.js",
+		"/Users/yoann/Developer/Autodesk/collab/src/services/broker/web_app/build/jslint.log",
+		"/Users/yoann/Developer/Autodesk/collab/src/services/broker/web_app/web/scripts/libs/retries.js",
+		"/Users/yoann/Developer/Autodesk/collab/src/services/broker/web_app/.gitignore",
+		"/Users/yoann/Developer/Autodesk/collab/src/services/broker/web_app/web/scripts/apps/ChannelWidget/ChannelWidget.js",
+		"/Users/yoann/Developer/Autodesk/collab/src/services/broker/web_app/web/scripts/apps/ChannelWidget/views/ChannelWidgetView.js",
+		"/Users/yoann/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/private/etc/hosts",
+		"/Users/yoann/Desktop/options.json",
+		"/Users/yoann/Library/Caches/Cleanup At Startup/Transmit/1EB2E199-EF5D-44B2-A29F-1724135A8364/app.js",
+		"/Users/yoann/Library/Caches/Cleanup At Startup/Transmit/20F1944D-78C5-42DC-9493-EE167290A0CF/theme-options.js",
+		"/Users/yoann/Library/Caches/Cleanup At Startup/Transmit/4EA6445D-7BE9-4B91-BDB2-82959A40EB68/theme-options.php",
+		"/Users/yoann/Library/Caches/Cleanup At Startup/Transmit/6A0866A3-FD0E-4923-B79F-57560F40A1C3/scan_2013-10-04_0cc763fd.json",
+		"/Users/yoann/Library/Caches/Cleanup At Startup/Transmit/32086839-3C53-4C5C-8FB5-788058A0B99B/scan_2013-10-04_90d6c86c.json",
+		"/Users/yoann/Library/Caches/Cleanup At Startup/Transmit/89C47D26-A798-4AEB-AB10-B10E69E9C693/scan_2013-10-04_e5dbb4be.json",
+		"/Users/yoann/Library/Caches/Cleanup At Startup/Transmit/C1007C20-CC19-4FE7-A652-A63A3C354071/scan_2013-10-04_eabedf46.json",
+		"/Users/yoann/Library/Caches/Cleanup At Startup/Transmit/191AB87A-A77E-4D5B-BD5F-D8DAF3C4A146/.htaccess",
+		"/Users/yoann/Library/Caches/Cleanup At Startup/Transmit/A0A812B6-18CF-4722-AABF-0E89AB42889E/scan_2013-10-04_eabedf46.json",
+		"/Users/yoann/Library/Caches/Cleanup At Startup/Transmit/FA865309-FA94-485C-A9D8-C7F27453E46F/scan_2013-10-04_e5dbb4be.json",
+		"/Users/yoann/Library/Caches/Cleanup At Startup/Transmit/9246F4D9-5459-4B81-8DF5-AD81BF1F49EF/scan_2013-10-04_90d6c86c.json",
+		"/Users/yoann/Library/Caches/Cleanup At Startup/Transmit/2A980DB3-3650-4994-957A-55F996E90DF1/scan_2013-10-04_0cc763fd.json",
+		"/Users/yoann/Library/Caches/Cleanup At Startup/Transmit/CDE13A85-F3D7-4DEF-BEBB-8D3CB619E66A/.htaccess",
+		"/Users/yoann/Library/Caches/Cleanup At Startup/Transmit/830602EB-368A-4179-B639-6C4336FE5592/scan_2014-03-23_8b562043.json",
+		"/Users/yoann/Library/Caches/Cleanup At Startup/Transmit/C22D00FB-F845-46DF-BA9E-05AA02B94980/sunrise.php",
+		"/Users/yoann/Library/Caches/Cleanup At Startup/Transmit/06190D6A-D86A-46E4-B411-E06128D44A56/.htaccess",
+		"/Users/yoann/Library/Caches/Cleanup At Startup/Transmit/FFB68583-61DA-4DE4-9846-B7FBC474F74D/wp-config.php",
+		"/Users/yoann/Library/Caches/Cleanup At Startup/Transmit/F73DD5B6-D8CD-4ADF-839E-CF0F23F88AA2/.htaccess",
+		"/Users/yoann/Desktop/jacquesbompard.wordpress.2014-09-01.xml",
+		"/Users/yoann/Desktop/liguedusud.wordpress.2014-09-03.xml",
+		"/Users/yoann/Developer/Works/Cossette/there-website/www/app/modules/menu.js",
+		"/Users/yoann/Developer/Works/Cossette/there-website/www/app/scenes/sanfran.js",
+		"/Users/yoann/Developer/Works/Cossette/there-website/www/app/app.js",
+		"/Users/yoann/Developer/Works/Cossette/there-website/.ftppass",
+		"/Users/yoann/Developer/Works/Cossette/there-website/www/app/modules/scene.js",
+		"/Users/yoann/Developer/Works/Cossette/there-website/www/app/scene_configs.js",
+		"/Users/yoann/Developer/Works/Cossette/there-website/www/app/modules/scenes-controller.js",
+		"/Applications/Sublime Text.app/Contents/MacOS/changelog.txt",
+		"/Users/yoann/.ssh/known_hosts",
+		"/private/etc/fstab.hd",
+		"/Users/yoann/Developer/Works/Cossette/there-website/Gruntfile.js",
+		"/Users/yoann/Developer/Works/Cossette/there-website/README.md",
+		"/Users/yoann/Developer/Works/Cossette/there-website/www/app/effects/sand.js",
+		"/Users/yoann/Developer/Works/Cossette/there-website/node_modules/grunt-contrib-coffee/node_modules/chalk/node_modules/.bin/strip-ansi",
+		"/Users/yoann/Developer/Works/Cossette/there-website/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/yui/datatable-message/lang/datatable-message_en.js",
+		"/Users/yoann/Developer/Works/Cossette/there-website/.sass-cache/035f065a9600d1c29efa6d3b71cdf3b77378be1b/main.scssc",
+		"/Users/yoann/Developer/Works/Cossette/there-website/.editorconfig",
+		"/Users/yoann/Developer/Works/Cossette/there-website/node_modules/grunt-ftp-deploy/node_modules/prompt/examples/add-properties.js",
+		"/Users/yoann/Developer/Works/Cossette/there-website/node_modules/grunt-contrib/AUTHORS",
+		"/Users/yoann/Developer/Works/Cossette/there-website/www/app/main.js",
+		"/Users/yoann/Developer/Works/Cossette/there-website/.ftpass",
+		"/Users/yoann/Developer/Works/geosearch/dist/styles/df6f7c96.main.css",
+		"/Users/yoann/Library/Caches/Cleanup At Startup/Transmit/75ACA487-6D1F-4814-B8E9-0F24610C63C5/geolocate.php",
+		"/Users/yoann/Developer/Works/geosearch/Gruntfile.js",
+		"/Users/yoann/Developer/Works/floatingmenu/.gitignore",
+		"/Users/yoann/Developer/Works/floatingmenu/index.html",
+		"/Users/yoann/Developer/Works/floatingmenu/src/sass/main.scss",
+		"/Users/yoann/Developer/Works/floatingmenu/demo/assets/sass/main.scss",
+		"/Users/yoann/Developer/Works/floatingmenu/demo/assets/main.css",
+		"/Users/yoann/Developer/Works/floatingmenu/dist/FloatingMenu.js",
+		"/Users/yoann/Developer/Works/floatingmenu/bower.json",
+		"/Users/yoann/Developer/Works/floatingmenu/.jshintrc",
+		"/Users/yoann/Developer/Works/famous_test/app/lib/famous-polyfills/famous.json",
+		"/var/folders/wf/q0hpzl890rvcb9ppqb2tyt2r0000gn/T/amd_module.js",
+		"/Users/yoann/Developer/Works/floatingmenu/.editorconfig",
+		"/Users/yoann/Library/Application Support/Sublime Text 3/Packages/SFTP/Default (OSX).sublime-keymap",
+		"/Users/yoann/Library/Application Support/Sublime Text 3/Packages/User/SFTP.sublime-settings",
+		"/Users/yoann/Library/Application Support/Sublime Text 3/Packages/SFTP/SFTP.sublime-settings",
+		"/Users/yoann/Developer/Works/sushiju/SUSHIJU.sublime-project",
+		"/Users/yoann/Developer/Works/yoannmoinet.com/yoannmoinet.com.sublime-project",
+		"/Users/yoann/Developer/Works/yoannmoinet.com/src/main.js",
+		"/Users/yoann/Developer/Works/yoannmoinet.com/src/main.css",
+		"/Users/Yoann/Documents/Works/codepen/codepen.sublime-project",
+		"/Users/Yoann/Documents/Works/yoannmoinet.com/bin/css/bootstrap.min.css",
+		"/Users/Yoann/Documents/Works/yoannmoinet.com/bin/js/bootstrap.min.js",
+		"/Users/Yoann/Downloads/webgl-heatmap-master/example.html",
+		"/Users/Yoann/Documents/Works/yoannmoinet.com/bin/js/webgl-heatmap.js",
+		"/Users/Yoann/Documents/Works/yoannmoinet.com/bin/css/main.css",
+		"/Users/Yoann/Documents/Works/yoannmoinet.com/bin/js/main.js",
+		"/Users/Yoann/Documents/Works/yoannmoinet.com/bin/js/jquery.knob.js",
+		"/Users/Yoann/Documents/Works/yoannmoinet.com/bin/js/jquery.fittext.js",
+		"/Users/Yoann/Documents/Works/yoannmoinet.com/bin/img/codepen.svg",
+		"/Users/Yoann/Documents/Works/yoannmoinet.com/sftp-config.json",
+		"/Users/Yoann/Documents/Works/hugo_2/app/database/migrations/2013_10_09_223431_create_users_table.php",
+		"/Users/Yoann/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/Yoann/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/Yoann/Library/Application Support/Sublime Text 2/Packages/Terminal/Default (OSX).sublime-keymap",
+		"/Users/Yoann/Documents/Works/hugo_2/.htaccess",
+		"/Users/Yoann/Documents/Works/hugo_2/public/Gruntfile.js",
+		"/Users/Yoann/Documents/Works/hugo_2/app/config/database.php",
+		"/Users/Yoann/Documents/Works/hugo_2/app/database/production.sqlite",
+		"/Users/Yoann/Documents/Works/hugo_2/public/app/index.html",
+		"/Users/Yoann/Documents/Works/hugo_2/public/app/views/index.php",
+		"/Users/Yoann/Documents/Works/sites/wp-content/plugins/threewp-broadcast/ThreeWP_Broadcast.php",
+		"/opt/local/etc/php5/php.ini-development",
+		"/opt/local/etc/php5/php.ini-production",
+		"/private/etc/apache2/users/Yoann.conf",
+		"/Users/Yoann/Documents/Works/hugo_2/test.php",
+		"/etc/hosts",
+		"/etc/apache2/extra/httpd-vhosts.conf",
+		"/Users/Yoann/Documents/.htaccess",
+		"/etc/apache2/httpd.conf",
+		"/Users/Yoann/hosts",
+		"/Users/Yoann/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/private/etc/apache2/httpd.conf",
+		"/Users/Yoann/Documents/Works/pres_fluent copie/index.html",
+		"/Users/Yoann/Desktop/submission.json",
+		"/Users/Yoann/Documents/Works/sites/yann_ligue.csv",
+		"/Users/Yoann/Documents/Works/sites/site_map_ligue.html",
+		"/Users/Yoann/Documents/Works/sites/.htaccess",
+		"/Users/Yoann/Dropbox/works/sites/site_map_jacques.html",
+		"/Users/Yoann/Dropbox/works/sites/temp/jacques.csv",
+		"/Users/Yoann/Dropbox/works/sites/temp/ligue.csv",
+		"/Users/Yoann/Library/Caches/Cleanup At Startup/Transmit/9B5081EB-3C01-43FB-A244-37AF26241803/.htaccess",
+		"/Users/Yoann/Dropbox/works/sites/.htaccess"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 109.0,
+		"where_history":
+		[
+			"",
+			"/Users/Yoann/Dropbox/works/sites/wp-content/plugins/contact-form-7",
+			"/Users/Yoann/Dropbox/works/sites/wp-content/themes/les-sites-de-yoann",
+			"/Users/Yoann/Dropbox/works/sites/wp-content/plugins/contact-form-7",
+			"/Users/Yoann/Dropbox/works/sites/wp-content/themes/les-sites-de-yoann/wp-content/plugins/contact-form-7",
+			"/Users/Yoann/Dropbox/works/sites/wp-content/themes/les-sites-de-yoann",
+			"",
+			"/Users/Yoann/Dropbox/works/blog/wp-content/themes/my_inline",
+			"/Users/Yoann/Dropbox/works/blog/wp-content/plugins/yet-another-related-posts-plugin",
+			"/Users/Yoann/Dropbox/works/blog/wp-content/themes/my_inline",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"Job.remove",
+			"this",
+			"collection",
+			"this",
+			"Job.delete",
+			"destroy",
+			"this",
+			";",
+			"COOKIE",
+			"SUNRISE",
+			"sites.yoannmoinet.com",
+			"sites.yoannmoinet.com/jacques-bompard",
+			"sites.yoannmoinet.com",
+			"sites.yoannmoinet.com/ligue-du-sud",
+			"upload_max",
+			"max_",
+			"sites.yoannmoinet.com",
+			"sites.yoannmoinet.com/jacques-bompard",
+			"sites.yoannmoinet.com",
+			"Catégories",
+			"ecf0f1",
+			"skip",
+			"resize",
+			"Resize",
+			"resize",
+			"destroy",
+			"x-ng",
+			"compass",
+			".tmp",
+			"'",
+			"url",
+			"camelCase",
+			"=?\";",
+			"$1",
+			"+",
+			"Cookie",
+			"cookie",
+			"h2",
+			"h1",
+			"h3",
+			"unfix",
+			"document.body.scrollTop",
+			"getScrollTop",
+			"constrainRect",
+			"isidifi",
+			"isFixed",
+			"shouldBeFixed",
+			"shouldBeVisible",
+			"isActive",
+			"treated",
+			"marginLeft",
+			"null",
+			"height",
+			"Math",
+			"rectEl",
+			"timerZone",
+			"rectPos",
+			"self.scroll",
+			"function",
+			"<",
+			"dif",
+			"doScroll",
+			"this",
+			"▶ ",
+			"<span>",
+			"<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, aperiam, rem nisi ex cumque quam itaque esse. Aperiam, est, ipsam, id, repudiandae inventore adipisci reprehenderit minus tenetur vel corrupti optio.</span>",
+			"classList",
+			"<p>▶ Lorem ipsum.</p>",
+			"content",
+			"menu",
+			"<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, quidem maiores accusamus fugit rem dolores esse. Nam, quibusdam porro voluptatum? Accusamus, ab, laborum voluptate blanditiis minima alias est deserunt minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, unde, nam corporis fugiat dolor perferendis itaque iste sapiente id dolore explicabo libero aspernatur illo a ut corrupti eius. Veritatis, provident!</p>",
+			"<div class=\"right\">",
+			"strong",
+			"contain_left",
+			"_2",
+			"_1",
+			"right",
+			":",
+			"h2",
+			"strong",
+			"Module",
+			"ouvrir_camion_sushi",
+			"10px",
+			"1px",
+			"horaire",
+			"'",
+			"<td",
+			", ",
+			"5986ae",
+			"34495E",
+			"halflings",
+			"src",
+			"texture",
+			"Texture",
+			"texture",
+			"Texture",
+			"texture",
+			"\n\n								</li>",
+			"\n								<li>\n",
+			" class=\"label ",
+			"</a>",
+			"<a ",
+			"<li>",
+			"<i ",
+			"</a>",
+			"<a href=",
+			"codepen",
+			"info",
+			"h2",
+			"100",
+			"Frontend",
+			"label",
+			"2ecc71",
+			"d35400",
+			"2ecc71",
+			"500",
+			"width",
+			"li_link",
+			" class=\"my_link\"",
+			"My ",
+			"css",
+			"imagick",
+			"\n</",
+			"php5_module",
+			"jacques",
+			"jacquesbompard",
+			"siteid",
+			"feed"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"104.131.20.174",
+			"104.131.20.174/jacquesbompard",
+			"104.131.20.174/liguedusud",
+			"104.131.20.174",
+			"104.131.20.174/jacquesbompard"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 88.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 107.0
+	},
+	"output.svn":
+	{
+		"height": 100.0
+	},
+	"project": "generator-marionette-apps.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"queuecontroll",
+				"web/scripts/apps/Queue/QueueController.js"
+			],
+			[
+				"queueapp",
+				"web/scripts/apps/Queue/QueueApp.js"
+			],
+			[
+				"jobmodel",
+				"web/scripts/apps/Queue/models/jobModel.js"
+			],
+			[
+				"sanfran.js",
+				"www/app/scenes/sanfran.js"
+			],
+			[
+				"menu.js",
+				"www/app/modules/menu.js"
+			],
+			[
+				"scene",
+				"www/app/modules/scene.js"
+			],
+			[
+				"scene-",
+				"www/app/modules/scenes-controller.js"
+			],
+			[
+				"app",
+				"www/app/app.js"
+			],
+			[
+				"countrie",
+				"assets/countries.geo.json"
+			],
+			[
+				"main",
+				"src/js/main.js"
+			],
+			[
+				"get",
+				"websocket-admin/api/getUser.php"
+			],
+			[
+				"nav",
+				"resources/js/Nav.js"
+			],
+			[
+				"mac",
+				"resources/js/Mac.js"
+			],
+			[
+				"meteo",
+				"resources/js/Meteo.js"
+			],
+			[
+				"drag",
+				"resources/js/Drag.js"
+			],
+			[
+				"mous",
+				"resources/js/MouseEvt.js"
+			],
+			[
+				"permanen",
+				"resources/js_backend/permanentCache.js"
+			],
+			[
+				"perm",
+				"resources/js_backend/permanentCache.js"
+			],
+			[
+				"src",
+				"resources/js_backend/src.js"
+			],
+			[
+				"radios",
+				"resources/js/Radios.js"
+			],
+			[
+				"lin",
+				"resources/js/Lineups.js"
+			],
+			[
+				"tools",
+				"resources/js_backend/tools.js"
+			],
+			[
+				"header",
+				"resources/js/Header.js"
+			],
+			[
+				"menu",
+				"resources/js/Menu.js"
+			],
+			[
+				"main.cs",
+				"resources/css/main.css"
+			],
+			[
+				"video",
+				"resources/js/Videos.js"
+			],
+			[
+				"videos",
+				"resources/js/Videos.js"
+			],
+			[
+				"audio",
+				"resources/css/audioplayer.css"
+			],
+			[
+				"main.c",
+				"resources/css/main.css"
+			],
+			[
+				"edito",
+				"resources/js/Editos.js"
+			],
+			[
+				"mainc",
+				"resources/css/main.css"
+			],
+			[
+				"mains",
+				"resources/js/main.js"
+			],
+			[
+				"inde",
+				"index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/Yoann/Dropbox/works/blog/blog.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 247.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
