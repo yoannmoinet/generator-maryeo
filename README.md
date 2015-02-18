@@ -9,6 +9,9 @@ Tools requirement
 - [GruntCLI](https://github.com/gruntjs/grunt-cli).
 - [Bower](https://bower.io).
 
+#### For windows users :
+- [Python 2.7.9](https://www.python.org/downloads/windows/) needed for libsass.
+- [Visual Studio Express 2013](http://www.visualstudio.com/downloads/download-visual-studio-vs#d-express-windows-desktop) needed for libsass.
 
 ### Getting Started
 
