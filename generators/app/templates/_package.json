@@ -18,7 +18,7 @@
         "grunt-contrib-watch": "~0.4.4",
         "grunt-nodemon": "^0.3.0",
         "grunt-requirejs": "~0.4.0",
-        "grunt-sass": "~0.12.0",
+        "grunt-sass": "~0.18.0",
         "matchdep": "~0.1.2",
         "sass-list-maps": "~1.0.0-b",
         "time-grunt": "~0.1.1"
