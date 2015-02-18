@@ -43,6 +43,7 @@ MarYeoGenerator.prototype.prompting = function () {
             done();
         }.bind(this));
     } else {
+        this.i18n = true;
         done();
     }
 };
