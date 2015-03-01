@@ -1,3 +1,4 @@
-<div class='container'>
-    <h1><%if (i18n) { %>{{i18n 'allo'}}<% } else { %>Hello<% } %></h1>
+<div<% if (bootstrap) { %> class='container'<% } %>>
+    <h1><% if (i18n) { %>{{i18n 'allo'}}<% } else { %>Hello<% } %></h1>
+    <p><a href="#example"><% if (i18n) { %>{{i18n 'go_to_example'}}<% } else { %>Go to Example<% } %></a></p>
 </div>
