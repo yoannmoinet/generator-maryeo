@@ -2,7 +2,7 @@ require.config({
     deps: [
         'backbone.marionette',
         'libs/localStoragePoly',
-        'bootstrap',
+        <% if (bootstrap) { %>'bootstrap',<% } %>
         'main'
     ],
     shim: {
@@ -15,12 +15,12 @@ require.config({
                 'jquery'
             ],
             exports: 'Backbone'
-        },
+        },<% if (bootstrap) { %>
         bootstrap: {
             deps: ['jquery'],
             exports: '$'
         },
-        underscore: {
+        <% } %>underscore: {
             exports: '_'
         }
     },
@@ -30,7 +30,7 @@ require.config({
         backbone: './bower/backbone/backbone',
         underscore: './bower/underscore/underscore',
         almond: './bower/almond/almond',
-        bootstrap: './bower/sass-bootstrap/dist/js/bootstrap',
+        <% if (bootstrap) { %>bootstrap: './bower/sass-bootstrap/dist/js/bootstrap',<% } %>
 
         /* alias all marionette libs */
         'backbone.marionette': './bower/backbone.marionette/lib/core/backbone.marionette',
