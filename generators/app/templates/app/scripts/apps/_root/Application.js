@@ -57,9 +57,9 @@ define(function (require) {
     App.addInitializer(function () {
         document.body.innerHTML = template();
 
+        <% if (i18n) { %>
         this.lang = 0;
 
-        <% if (i18n) { %>
         //Get localStored stuff
         //like lang
         if (ls.getItem('lang')) {

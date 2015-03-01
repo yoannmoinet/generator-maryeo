@@ -1,5 +1,5 @@
 {
-    "name": "WebApp",
+    "name": "<%= appname %>",
     "version": "0.0.0",
     "private": true,
     "description": "Webapp generated with generator-maryeo.",

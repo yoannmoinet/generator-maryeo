@@ -6,7 +6,7 @@ define(function (require) {
     var Hub = require('libs/hub');
     // And the view(s).
     var ExampleView = require('apps/Example/views/ExampleView');
-
+<% if (i18n) { %>
     // Locales of the subApp
     var en = require('json!apps/Example/locales/en.json');
     var fr = require('json!apps/Example/locales/fr.json');
@@ -15,6 +15,7 @@ define(function (require) {
     //Register locales
     i18n.addLocales('en', en);
     i18n.addLocales('fr', fr);
+<% } %>
 
     // Declare the new module, and attach it to the solution.
     App.module('Example', {
@@ -49,8 +50,10 @@ define(function (require) {
             Example.addInitializer(function (args) {
                 // The controller.
                 Example.controller = new Example.Controller();
+                <% if (i18n) { %>
                 // Listent to lang changes
                 Hub.on('change:lang', this.controller.changeLang);
+                <% } %>
             });
 
             // When our subApp closes, we clean.

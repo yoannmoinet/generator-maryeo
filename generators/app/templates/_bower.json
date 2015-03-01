@@ -1,6 +1,6 @@
 {
-    "name": "WebApp",
-    "version": "0.0.1",
+    "name": "<%= appname %>",
+    "version": "0.0.0",
     "private": true,
     "description": "Webapp generated with generator-maryo.",
     "dependencies": {

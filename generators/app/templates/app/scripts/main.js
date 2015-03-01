@@ -1,11 +1,11 @@
 require([
     'application',
     'handlebars',
-    'libs/i18n',
+    <% if (i18n) { %>'libs/i18n',<% } %>
     'apps/Example/Example'
-], function (App, Handlebars, i18n) {
+], function (App, Handlebars<% if (i18n) { %>, i18n<% } %>) {
     'use strict';
-
+<% if (i18n) { %>
     //I18N Helper.
     Handlebars.registerHelper('i18n',
         function (str) {
@@ -14,6 +14,7 @@ require([
             }
             return 'can\'t translate this.';
         });
+<% } %>
 
     App.start();
 
