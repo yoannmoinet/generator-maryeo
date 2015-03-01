@@ -79,6 +79,11 @@ MarYeoGenerator.prototype.writing = function () {
     var prefs = this.preferences;
     if (prefs.i18n) {
         this.directory(apps + '/_root/locales', apps + '/_root/locales');
+        this.fs.copyTpl(
+            this.templatePath(libs + '/i18n.js'),
+            this.destinationPath(libs + '/i18n.js'),
+            prefs
+        );
     }
     if (prefs.example) {
         this.directory(apps + '/Example/templates', apps + '/Example/templates');
