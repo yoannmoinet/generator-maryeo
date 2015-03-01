@@ -9,8 +9,8 @@ define(function (require) {
     var Hub = require('libs/hub');
 
     return Marionette.ItemView.extend({
-        tagName: 'div',
-        className: 'view',
+        <% if (tagName) { %>tagName: '<%= tagName %>',<% } %>
+        <% if (className) { %>className: '<%= className %>',<% } %>
         id: function () {
             return 'view_' + Hub.request('random');
         },
@@ -18,9 +18,6 @@ define(function (require) {
         ui: {},
         events: {},
         modelEvents: {},
-        serializeData: function () {
-            return this.model.toJSON();
-        },
         initialize: function () {},
         onRender: function () {},
         onDestroy: function () {}
