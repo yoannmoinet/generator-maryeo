@@ -38,7 +38,7 @@ MarYeoGenerator.prototype.prompting = function () {
         }];
 
         this.prompt(prompts, function (props) {
-            this.appname = props.name;
+            this.appname = props.appname;
             this.i18n = true;
             done();
         }.bind(this));
