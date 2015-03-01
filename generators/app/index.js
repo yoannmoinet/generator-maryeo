@@ -73,122 +73,50 @@ MarYeoGenerator.prototype.prompting = function () {
     }.bind(this));
 };
 
-MarYeoGenerator.prototype.writing = function () {
-    var apps = 'app/scripts/apps';
-    var libs = 'app/scripts/libs';
-    var prefs = this.preferences;
-    if (prefs.i18n) {
+var apps = 'app/scripts/apps';
+var libs = 'app/scripts/libs';
+MarYeoGenerator.prototype.writing = {
+    app: function () {
+        var prefs = this.preferences;
+        this.directory('app/sass', 'app/sass');
+        this.directory(apps + '/_root/templates', apps + '/_root/templates');
+        this.template(apps + '/_root/Application.js', apps + '/_root/Application.js', prefs);
+        this.template(apps + '/_root/config.json', apps + '/_root/config.json', prefs);
+        this.template(apps + '/_root/Controller.js', apps + '/_root/Controller.js', prefs);
+        this.template(apps + '/_root/Router.js', apps + '/_root/Router.js', prefs);
+        this.template('app/scripts/init.js', 'app/scripts/init.js', prefs);
+        this.template('app/scripts/main.js', 'app/scripts/main.js', prefs);
+        this.template('app/index.html', 'app/index.html', prefs);
+        this.template('app/favicon.ico', 'app/favicon.ico', prefs);
+        if (!prefs.i18n) { return; }
         this.directory(apps + '/_root/locales', apps + '/_root/locales');
-        this.fs.copyTpl(
-            this.templatePath(libs + '/i18n.js'),
-            this.destinationPath(libs + '/i18n.js'),
-            prefs
-        );
-    }
-    if (prefs.example) {
+    },
+    configs: function () {
+        var prefs = this.preferences;
+        this.template('editorconfig', '.editorconfig', prefs);
+        this.template('jshintrc', '.jshintrc', prefs);
+        this.template('bowerrc', '.bowerrc', prefs);
+        this.template('jsbeautifyrc', '.jsbeautifyrc', prefs);
+        this.copy('Gruntfile.js');
+        this.template('_package.json', 'package.json', prefs);
+        this.template('_bower.json', 'bower.json', prefs);
+    },
+    libs: function () {
+        var prefs = this.preferences;
+        this.template(libs + '/hub.js', libs + '/hub.js', prefs);
+        this.template(libs + '/localStoragePoly.js', libs + '/localStoragePoly.js', prefs);
+        if (!prefs.i18n) { return; }
+        this.template(libs + '/i18n.js', libs + '/i18n.js', prefs);
+    },
+    example: function () {
+        var prefs = this.preferences;
+        if (!prefs.example) { return; }
         this.directory(apps + '/Example/templates', apps + '/Example/templates');
         this.directory(apps + '/Example/views', apps + '/Example/views');
-        this.fs.copyTpl(
-            this.templatePath(apps + '/Example/Example.js'),
-            this.destinationPath(apps + '/Example/Example.js'),
-            prefs
-        );
-        if (prefs.i18n) {
-            this.directory(apps + '/Example/locales', apps + '/Example/locales');
-            this.fs.copyTpl(
-                this.templatePath(libs + '/i18n.js'),
-                this.destinationPath(libs + '/i18n.js'),
-                prefs
-            );
-        }
+        this.template(apps + '/Example/Example.js', apps + '/Example/Example.js', prefs);
+        if (!prefs.i18n) { return; }
+        this.directory(apps + '/Example/locales', apps + '/Example/locales');
     }
-    this.directory('app/sass', 'app/sass');
-    this.directory(apps + '/_root/templates', apps + '/_root/templates');
-    this.fs.copyTpl(
-        this.templatePath(apps + '/_root/Application.js'),
-        this.destinationPath(apps + '/_root/Application.js'),
-        prefs
-    );
-    this.fs.copyTpl(
-        this.templatePath(apps + '/_root/config.json'),
-        this.destinationPath(apps + '/_root/config.json'),
-        prefs
-    );
-    this.fs.copyTpl(
-        this.templatePath(apps + '/_root/Controller.js'),
-        this.destinationPath(apps + '/_root/Controller.js'),
-        prefs
-    );
-    this.fs.copyTpl(
-        this.templatePath(apps + '/_root/Router.js'),
-        this.destinationPath(apps + '/_root/Router.js'),
-        prefs
-    );
-    this.fs.copyTpl(
-        this.templatePath(libs + '/hub.js'),
-        this.destinationPath(libs + '/hub.js'),
-        prefs
-    );
-    this.fs.copyTpl(
-        this.templatePath(libs + '/localStoragePoly.js'),
-        this.destinationPath(libs + '/localStoragePoly.js'),
-        prefs
-    );
-    this.fs.copyTpl(
-        this.templatePath('app/scripts/init.js'),
-        this.destinationPath('app/scripts/init.js'),
-        prefs
-    );
-    this.fs.copyTpl(
-        this.templatePath('app/scripts/main.js'),
-        this.destinationPath('app/scripts/main.js'),
-        prefs
-    );
-    this.fs.copyTpl(
-        this.templatePath('app/index.html'),
-        this.destinationPath('app/index.html'),
-        prefs
-    );
-    this.fs.copyTpl(
-        this.templatePath('app/favicon.ico'),
-        this.destinationPath('app/favicon.ico'),
-        prefs
-    );
-    this.fs.copyTpl(
-        this.templatePath('editorconfig'),
-        this.destinationPath('.editorconfig'),
-        prefs
-    );
-    this.fs.copyTpl(
-        this.templatePath('jshintrc'),
-        this.destinationPath('.jshintrc'),
-        prefs
-    );
-    this.fs.copyTpl(
-        this.templatePath('bowerrc'),
-        this.destinationPath('.bowerrc'),
-        prefs
-    );
-    this.fs.copyTpl(
-        this.templatePath('jsbeautifyrc'),
-        this.destinationPath('.jsbeautifyrc'),
-        prefs
-    );
-    this.fs.copy(
-        this.templatePath('Gruntfile.js'),
-        this.destinationPath('Gruntfile.js')
-    );
-
-    this.fs.copyTpl(
-        this.templatePath('_package.json'),
-        this.destinationPath('package.json'),
-        prefs
-    );
-    this.fs.copyTpl(
-        this.templatePath('_bower.json'),
-        this.destinationPath('bower.json'),
-        prefs
-    );
 };
 
 MarYeoGenerator.prototype.end = function () {
