@@ -57,7 +57,12 @@ MarYeoGenerator.prototype.prompting = function () {
     }];
 
     this.prompt(prompts, function (answers) {
-        var hasMod = function (mod) { return answers.includes.indexOf(mod) !== -1; };
+        var hasMod = function hasMod (mod) {
+            if (!answers.includes) {
+                return false;
+            }
+            return answers.includes.indexOf(mod) !== -1;
+        };
         this.preferences = {};
         this.preferences.appname = answers.appname;
         this.preferences.bootstrap = hasMod('bootstrap');
@@ -162,7 +167,9 @@ MarYeoGenerator.prototype.writing = function () {
 };
 
 MarYeoGenerator.prototype.end = function () {
-    this.installDependencies();
+    if (!this.options['skip-install']) {
+        this.installDependencies();
+    }
 };
 
 module.exports = MarYeoGenerator;
