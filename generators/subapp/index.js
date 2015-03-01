@@ -29,9 +29,9 @@ MaryoGenerator.prototype.prompting = function () {
     if (this.subappname === undefined) {
         prompts.push({
             type: 'input',
-            name: 'appname',
+            name: 'subappname',
             message: 'What is the name of your sub-app?',
-            default: this.appname
+            default: this.subappname
         });
     }
 
@@ -47,40 +47,41 @@ MaryoGenerator.prototype.prompting = function () {
         var included = function (name) {
             return props.included.indexOf(name) >= 0;
         };
-        this.subappname = props.name || this.subappname;
-        this.model = included('Model');
-        this.collection = included('Collection');
-        this.view = included('View');
-        this.i18n = included('i18n');
+        this.preferences = {};
+        this.preferences.subappname = props.name || this.subappname;
+        this.preferences.model = included('Model');
+        this.preferences.collection = included('Collection');
+        this.preferences.view = included('View');
+        this.preferences.i18n = included('i18n');
         done();
     }.bind(this));
 };
 
 MaryoGenerator.prototype.writing = {
     app: function () {
-        var name = this.subappname;
-        this.subappnametoLower = name.toLowerCase();
+        var name = this.preferences.subappname;
+        this.preferences.subappnametoLower = name.toLowerCase();
 
         this.destinationRoot('app/scripts/apps/' + name);
 
-        this.template('SubAppController.js', name + 'Controller.js', this);
-        this.template('SubApp.js', name + '.js', this);
-        this.template('config.json', 'config.json', this);
+        this.template('SubAppController.js', name + 'Controller.js', this.preferences);
+        this.template('SubApp.js', name + '.js', this.preferences);
+        this.template('config.json', 'config.json', this.preferences);
 
-        if (this.model) {
+        if (this.preferences.model) {
             this.directory('models', 'models');
         }
 
-        if (this.collection) {
+        if (this.preferences.collection) {
             this.directory('collections', 'collections');
         }
 
-        if (this.view) {
+        if (this.preferences.view) {
             this.directory('views', 'views');
             this.directory('templates', 'templates');
         }
 
-        if (this.i18n) {
+        if (this.preferences.i18n) {
             this.directory('locales', 'locales');
         }
     }
