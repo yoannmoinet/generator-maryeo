@@ -130,6 +130,26 @@ MarYeoGenerator.prototype.writing = function () {
         prefs
     );
     this.fs.copyTpl(
+        this.templatePath('app/scripts/init.js'),
+        this.destinationPath('app/scripts/init.js'),
+        prefs
+    );
+    this.fs.copyTpl(
+        this.templatePath('app/scripts/main.js'),
+        this.destinationPath('app/scripts/main.js'),
+        prefs
+    );
+    this.fs.copyTpl(
+        this.templatePath('app/index.html'),
+        this.destinationPath('app/index.html'),
+        prefs
+    );
+    this.fs.copyTpl(
+        this.templatePath('app/favicon.ico'),
+        this.destinationPath('app/favicon.ico'),
+        prefs
+    );
+    this.fs.copyTpl(
         this.templatePath('editorconfig'),
         this.destinationPath('.editorconfig'),
         prefs
