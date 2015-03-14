@@ -5,6 +5,7 @@ var path = require('path');
 var yeoman = require('yeoman-generator');
 var yosay = require('yosay');
 var _ = require('underscore');
+var emmet = require('emmet');
 var cwd = process.cwd();
 
 function MaryoGenerator(args, options, config) {
@@ -44,6 +45,13 @@ MaryoGenerator.prototype.prompting = function () {
     var done = this.async();
     var prompts = [];
     var subapps = getDirectories(cwd + '/app/scripts/apps/');
+    var includeChoices = ['i18n'];
+    var types = {
+        'ItemView': ['Model', 'Template'],
+        'LayoutView': ['Model', 'Template'],
+        'CollectionView': ['Model', 'Collection', 'ChildView', 'ChildViewTemplate', 'Template'],
+        'CompositeView': ['Model', 'Collection', 'ChildView', 'ChildViewTemplate', 'Template']
+    };
 
     if (this.viewname === undefined) {
         prompts.push({
@@ -64,30 +72,26 @@ MaryoGenerator.prototype.prompting = function () {
         type: 'list',
         name: 'viewtype',
         message: 'What type of view?',
-        choices: ['ItemView', 'LayoutView', 'CollectionView', 'CompositeView'],
-        default: 'ItemView'
+        choices: _.keys(types),
+        default: types[0],
+        filter: function (value) {
+            Array.prototype.unshift.apply(includeChoices, types[value]);
+            return value;
+        }
     });
     prompts.push({
         type: 'checkbox',
         name: 'included',
         message: 'Here\'s what we\'ll create for you :',
-        choices: ['Model', 'Collection', 'ChildView', 'ChildViewTemplate', 'ViewTemplate', 'i18n'],
-        when: function (answers) {
-
-        }
+        choices: includeChoices,
+        default: includeChoices
     });
+
     prompts.push({
         type: 'input',
         name: 'emmetKickstart',
-        message: 'Do you want to kickstart your view with Emmet?',
+        message: 'Kickstart your View with Emmet.',
         default: 'div'
-    });
-    prompts.push({
-        type: 'checkbox',
-        name: 'included',
-        message: 'What do you need with it?',
-        choices: ['Model', 'Collection', 'View', 'i18n'],
-        default: ['Model', 'Collection', 'View', 'i18n']
     });
 
     this.prompt(prompts, function (props) {
