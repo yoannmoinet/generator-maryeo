@@ -8,7 +8,7 @@ module.exports = function (grunt) {
     // configurables
     var config = {
         app: 'app',
-        build: 'build',
+        build: 'dist',
         sassImagePath: '../images'
     };
 
