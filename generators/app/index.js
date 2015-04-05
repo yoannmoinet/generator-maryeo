@@ -78,8 +78,8 @@ var libs = 'app/scripts/libs';
 MarYeoGenerator.prototype.writing = {
     app: function () {
         var prefs = this.preferences;
-        this.directory('app/sass', 'app/sass');
-        this.directory(apps + '/_root/templates', apps + '/_root/templates');
+        this.template('app/sass/styles.scss', 'app/sass/styles.scss', prefs);
+        this.template(apps + '/_root/templates/app.hbs', apps + '/_root/templates/app.hbs', prefs);
         this.template(apps + '/_root/Application.js', apps + '/_root/Application.js', prefs);
         this.template(apps + '/_root/config.json', apps + '/_root/config.json', prefs);
         this.template(apps + '/_root/Controller.js', apps + '/_root/Controller.js', prefs);
@@ -87,9 +87,10 @@ MarYeoGenerator.prototype.writing = {
         this.template('app/scripts/init.js', 'app/scripts/init.js', prefs);
         this.template('app/scripts/main.js', 'app/scripts/main.js', prefs);
         this.template('app/index.html', 'app/index.html', prefs);
-        this.template('app/favicon.ico', 'app/favicon.ico', prefs);
+        this.copy('app/favicon.ico');
         if (!prefs.i18n) { return; }
-        this.directory(apps + '/_root/locales', apps + '/_root/locales');
+        this.template(apps + '/_root/locales/en.json', apps + '/_root/locales/en.json', prefs);
+        this.template(apps + '/_root/locales/fr.json', apps + '/_root/locales/fr.json', prefs);
     },
     configs: function () {
         var prefs = this.preferences;
@@ -111,11 +112,12 @@ MarYeoGenerator.prototype.writing = {
     example: function () {
         var prefs = this.preferences;
         if (!prefs.example) { return; }
-        this.directory(apps + '/Example/templates', apps + '/Example/templates');
-        this.directory(apps + '/Example/views', apps + '/Example/views');
+        this.template(apps + '/Example/templates/example.hbs', apps + '/Example/templates/example.hbs', prefs);
+        this.template(apps + '/Example/views/ExampleView.js', apps + '/Example/views/ExampleView.js', prefs);
         this.template(apps + '/Example/Example.js', apps + '/Example/Example.js', prefs);
         if (!prefs.i18n) { return; }
-        this.directory(apps + '/Example/locales', apps + '/Example/locales');
+        this.template(apps + '/Example/locales/en.json', apps + '/Example/locales/en.json', prefs);
+        this.template(apps + '/Example/locales/fr.json', apps + '/Example/locales/fr.json', prefs);
     }
 };
 
