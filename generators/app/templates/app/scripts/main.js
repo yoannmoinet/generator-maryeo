@@ -1,8 +1,8 @@
 require([
     'application',
-    'handlebars',
-    <% if (i18n) { %>'libs/i18n',<% } %>
-    'apps/Example/Example'
+    'handlebars'<% if (i18n) { %>,
+    'libs/i18n'<% } %><% if (example) { %>,
+    'apps/Example/Example'<% } %>
 ], function (App, Handlebars<% if (i18n) { %>, i18n<% } %>) {
     'use strict';
 <% if (i18n) { %>

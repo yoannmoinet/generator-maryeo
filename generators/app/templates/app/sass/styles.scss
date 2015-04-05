@@ -3,9 +3,9 @@
 /**
  * Insert variables modification here
  */
-<% if (this.bootstrap) { %>
+<% if (bootstrap) { %>
 @import '../scripts/bower/sass-bootstrap/lib/bootstrap.scss';<% } %>
-<% if (this.fontawesome) { %>@import '../scripts/bower/font-awesome/scss/font-awesome.scss';
+<% if (fontawesome) { %>@import '../scripts/bower/font-awesome/scss/font-awesome.scss';
 <% } %>
 /**
  * Insert modules here
