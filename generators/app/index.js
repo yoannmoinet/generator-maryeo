@@ -98,7 +98,12 @@ MarYeoGenerator.prototype.writing = {
         this.template('jshintrc', '.jshintrc', prefs);
         this.template('bowerrc', '.bowerrc', prefs);
         this.template('jsbeautifyrc', '.jsbeautifyrc', prefs);
-        this.copy('Gruntfile.js');
+        // Changing the template in Gruntfile to keep its defaults behavior
+        this.template('Gruntfile.js', 'Gruntfile.js', prefs, {
+            evaluate: /\{\{([\s\S]+?)\}\}/g,
+            interpolate: /\{\{=([\s\S]+?)\}\}/g,
+            escape: /\{\{-([\s\S]+?)\}\}/g
+        });
         this.template('_package.json', 'package.json', prefs);
         this.template('_bower.json', 'bower.json', prefs);
     },
