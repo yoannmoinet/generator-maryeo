@@ -1,6 +1,6 @@
 # Generator Maryeo
 
-[![npm version](https://img.shields.io/npm/v/generator-maryeo.svg?style=flat-square)](http://badge.fury.io/js/generator-maryeo)
+[![npm version](https://img.shields.io/npm/v/generator-maryeo.svg?style=flat-square)](https://www.npmjs.org/packages/generator-maryeo)
 [![Build Status](https://img.shields.io/travis/yoannmoinet/generator-maryeo.svg?style=flat-square)](https://travis-ci.org/yoannmoinet/generator-maryeo)
 [![Join the chat at https://gitter.im/yoannmoinet/generator-maryeo](https://img.shields.io/badge/gitter-join-brightgreen.svg?style=flat-square)](https://gitter.im/yoannmoinet/generator-maryeo?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
